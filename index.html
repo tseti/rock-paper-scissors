@@ -5,10 +5,36 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Rock Paper Scissors: The Game</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-  <script src="main.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="reset.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
 </head>
 <body>
-  <h1>Rock, Paper, Scissors: The Game</h1>
+  <h1 class="title">Rock, Paper, Scissors: The Game</h1>
+  <header>
+    <div class="scoreboard">
+      <p>score</p>
+      <div class="score">
+        <ul>
+          <li id="player-score-title">YOU</li>
+          <li id="player-score">0<li>
+        </ul>
+        <div id="separator">:</div>
+        <ul>
+          <li id="cpu-score-title">CPU</li>
+          <li id="cpu-score">0</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div class="selections">Selections panel</div>
+  <main class="game-board">
+    <button id="rock">Rock</button>
+    <button id="paper">Paper</button>
+    <button id="scissors">Scissors</button>
+  </main>
+  <footer>
+    <div class="result-display"></div>
+  </footer>
+  <script src="main.js"></script>
 </body>
 </html>
